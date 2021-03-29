@@ -518,7 +518,7 @@ class Gui(tk.Frame):
             avg = sum / len(results)
             average = str(round(avg, 2))
 
-            text = tk.Label(self.master, text="Your average score for this topic is "+average)
+            text = tk.Label(self.master, text="Your average score for this topic is "+average+"%")
             text.grid(row=0, column=0)
 
             graphBtn = tk.Button(self.master, text="See graph of previous results", command=lambda: self.grapher(results))
